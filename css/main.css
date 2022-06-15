@@ -4,7 +4,17 @@
     --target-color: blue;
 
 }
+.sprites{
+    width: 414px;
+    height: 238px;
 
+
+    background-image: url('../images/SVG/b_mc_logo.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    animation: logoanim 20s steps(6,end) infinite
+}
 .box{
     width: 200px;
     height: 50px;
@@ -31,4 +41,11 @@
 @keyframes colorSwap {
     from { background-color: var(--main-bg-color); width: 200px;}
     to {background-color: var(--target-color); width: 400px;}
+}
+
+@keyframes logoanim {
+    
+
+    from {background-position: 0;}
+    to {background-position:0 -1182px;}
 }
